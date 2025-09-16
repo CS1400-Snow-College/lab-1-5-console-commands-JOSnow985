@@ -17,7 +17,7 @@ currentLine += 1;
 Console.SetCursorPosition(0, currentLine);
 for (int currentCol = 0; currentCol <= 13; currentCol += 1)
 {
-    if (currentCol <= 3)
+    if (currentCol <= 3 || currentCol >= 9)
     {
         Console.BackgroundColor = ConsoleColor.Cyan;
         Console.Write(strBlock);
@@ -25,11 +25,6 @@ for (int currentCol = 0; currentCol <= 13; currentCol += 1)
     else if (currentCol >= 4 && currentCol <= 8)
     {
         Console.BackgroundColor = ConsoleColor.Red;
-        Console.Write(strBlock);
-    }
-    else if (currentCol >= 9)
-    {
-        Console.BackgroundColor = ConsoleColor.Cyan;
         Console.Write(strBlock);
     }
 }
@@ -40,7 +35,7 @@ currentLine += 1;
 Console.SetCursorPosition(0, currentLine);
 for (int currentCol = 0; currentCol <= 13; currentCol += 1)
 {
-    if (currentCol <= 2)
+    if (currentCol <= 2 || currentCol >= 12)
     {
         Console.BackgroundColor = ConsoleColor.Cyan;
         Console.Write(strBlock);
@@ -48,11 +43,6 @@ for (int currentCol = 0; currentCol <= 13; currentCol += 1)
     else if (currentCol >= 3 && currentCol <= 11)
     {
         Console.BackgroundColor = ConsoleColor.Red;
-        Console.Write(strBlock);
-    }
-    else if (currentCol >= 12)
-    {
-        Console.BackgroundColor = ConsoleColor.Cyan;
         Console.Write(strBlock);
     }
 }
