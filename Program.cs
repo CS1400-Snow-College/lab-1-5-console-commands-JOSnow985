@@ -1,5 +1,5 @@
 ﻿Console.Clear();
-string strBlock = "  ";
+string strBlock = "   ";
 int currentLine = 0;
 Console.SetCursorPosition(0, currentLine);
 Console.BackgroundColor = ConsoleColor.Black;
